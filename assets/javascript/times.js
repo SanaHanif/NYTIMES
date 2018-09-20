@@ -18,4 +18,13 @@ $(document).ready(function () {
         var snippetArticle = response.docs.snippet;
         console.log(snippetArticle);
     })
+
+    $("#search-btn").on("click tap", function (event) {
+        event.preventDefault();
+    
+        // stores value entered into the form
+        // var search = $("#term-input").val().trim();
+
+    });
+
 });

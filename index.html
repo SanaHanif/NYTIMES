@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <div class="container d-flex flex-column">
-        <div class="row mt-3" id="header">
+    <div class="container">
+        <div class="row mt-3 header">
             <div class="col"><i class="far fa-newspaper mr-3"></i>New York Times Search
             </div>
         </div>
@@ -33,25 +33,23 @@
                     </div>
                     <div class="card-body">
                         <label class="term-title" for="term-input">Search Term:</label><br>
-                        <input type="text" id="term-input"><br>
+                        <input class="input-group" type="text" id="term-input"><br>
 
                         <label class="term-title mt-2" for="num-retrieve">Number of Records to Retrieve:</label><br>
                         <select class="custom-select" id="inputGroupSelect01">
                             <option selected>Choose...</option>
                             <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
                             <option value="5">5</option>
+                            <option value="10">10</option>
                         </select><br>
 
                         <label class="term-title mt-2" for="start-year">Start Year (Optional):</label><br>
-                        <input type="text" id="start-year"><br>
+                        <input class="input-group" type="text" id="start-year"><br>
 
                         <label class="term-title mt-2" for="end-year">End Year (Optional):</label><br>
-                        <input type="text" id="end-year"><br>
+                        <input class="input-group" type="text" id="end-year"><br>
 
-                        <button type="button" class="btn btn-primary mt-3" id="search-btn"><i class="fas fa-search mr-2"></i>Search</button>
+                        <button type="button" class="btn btn-success mt-3" id="search-btn"><i class="fas fa-search mr-2"></i>Search</button>
                         <button type="button" class="btn btn-secondary mt-3" id="clear-btn"><i class="far fa-trash-alt mr-2"></i>Clear Results</button>
                     </div>
                 </div>

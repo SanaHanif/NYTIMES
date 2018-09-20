@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    background-color: DARKOLIVEGREEN;
+    color: white;
+    text-align: center;
+    padding: 2vw;
+    font-size: 2vw;
+    border-radius: 20px;
+}

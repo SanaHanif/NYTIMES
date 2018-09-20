@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NYT Searcher</title>
+    <meta charset="UTF-8">
+    <!-- favicon on tab bar -->
+    <!-- <link rel="icon" type="image/png" href="assets/images/"> -->
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- animate.css stylesheet -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css"> -->
+    <!-- google fonts -->
+    <link href=“https://fonts.googleapis.com/css?family=Roboto” rel=“stylesheet”>
+    <!-- my stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container d-flex flex-column">
+        <div class="row mt-3" id="header">
+            <div class="col">New York Times Search
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Search Parameters
+                    </div>
+                    <div class="card-body">
+                        <label class="term-title" for="term-input">Search Term:</label><br>
+                        <input type="text" id="term-input"><br>
+
+                        <label class="term-title" for="num-retrieve">Number of Records to Retrieve:</label><br>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select><br>
+
+                        <label class="term-title" for="start-year">Start Year (Optional):</label><br>
+                        <input type="text" id="start-year"><br>
+
+                        <label class="term-title" for="end-year">End Year (Optional):</label><br>
+                        <input type="text" id="end-year"><br>
+
+                        <button type="button" class="btn btn-primary">Search</button>
+                        <button type="button" class="btn btn-secondary">Clear Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Top Articles
+                    </div>
+                    <div class="card-body" id="articles-view">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery min link -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- bootstrap for js min link -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- my javascript sheet -->
+    <script type="text/javascript" src="assets/javascript/times.js"></script>
+</body>
+
+</html>

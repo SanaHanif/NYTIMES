@@ -13,6 +13,8 @@
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css"> -->
     <!-- google fonts -->
     <link href=“https://fonts.googleapis.com/css?family=Roboto” rel=“stylesheet”>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- my stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -20,7 +22,7 @@
 <body>
     <div class="container d-flex flex-column">
         <div class="row mt-3" id="header">
-            <div class="col">New York Times Search
+            <div class="col"><i class="far fa-newspaper mr-3"></i>New York Times Search
             </div>
         </div>
         <div class="row mt-3">
@@ -33,7 +35,7 @@
                         <label class="term-title" for="term-input">Search Term:</label><br>
                         <input type="text" id="term-input"><br>
 
-                        <label class="term-title" for="num-retrieve">Number of Records to Retrieve:</label><br>
+                        <label class="term-title mt-2" for="num-retrieve">Number of Records to Retrieve:</label><br>
                         <select class="custom-select" id="inputGroupSelect01">
                             <option selected>Choose...</option>
                             <option value="1">1</option>
@@ -43,14 +45,14 @@
                             <option value="5">5</option>
                         </select><br>
 
-                        <label class="term-title" for="start-year">Start Year (Optional):</label><br>
+                        <label class="term-title mt-2" for="start-year">Start Year (Optional):</label><br>
                         <input type="text" id="start-year"><br>
 
-                        <label class="term-title" for="end-year">End Year (Optional):</label><br>
+                        <label class="term-title mt-2" for="end-year">End Year (Optional):</label><br>
                         <input type="text" id="end-year"><br>
 
-                        <button type="button" class="btn btn-primary">Search</button>
-                        <button type="button" class="btn btn-secondary">Clear Results</button>
+                        <button type="button" class="btn btn-primary mt-3" id="search-btn"><i class="fas fa-search mr-2"></i>Search</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="clear-btn"><i class="far fa-trash-alt mr-2"></i>Clear Results</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +61,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        Top Articles
+                            <i class="fas fa-table mr-2"></i>Top Articles
                     </div>
                     <div class="card-body" id="articles-view">
                     </div>

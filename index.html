@@ -11,17 +11,20 @@
         crossorigin="anonymous">
     <!-- animate.css stylesheet -->
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css"> -->
+    <!-- animate css stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <!-- google fonts -->
     <link href=“https://fonts.googleapis.com/css?family=Roboto” rel=“stylesheet”>
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <!-- my stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="row mt-3 header">
+        <div class="row mt-3 header animated infinite pulse">
             <div class="col"><i class="far fa-newspaper mr-3"></i>New York Times Search
             </div>
         </div>
@@ -50,7 +53,8 @@
                         <input class="input-group" type="text" id="end-year"><br>
 
                         <button type="button" class="btn btn-success mt-3" id="search-btn"><i class="fas fa-search mr-2"></i>Search</button>
-                        <button type="button" class="btn btn-secondary mt-3" id="clear-btn"><i class="far fa-trash-alt mr-2"></i>Clear Results</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="clear-btn"><i class="far fa-trash-alt mr-2"></i>Clear
+                            Results</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +63,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                            <i class="fas fa-table mr-2"></i>Top Articles
+                        <i class="fas fa-table mr-2"></i>Top Articles
                     </div>
                     <div class="card-body" id="articles-view">
                     </div>
